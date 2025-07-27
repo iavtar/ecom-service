@@ -1,8 +1,8 @@
-package com.iavtar.service.impl;
+package com.iavtar.infrastructure.service.impl;
 
-import com.iavtar.entity.User;
-import com.iavtar.repository.UserRepository;
-import com.iavtar.service.UserService;
+import com.iavtar.infrastructure.entity.User;
+import com.iavtar.infrastructure.service.UserService;
+import com.iavtar.infrastructure.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

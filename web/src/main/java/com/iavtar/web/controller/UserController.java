@@ -1,7 +1,7 @@
-package com.iavtar.controller;
+package com.iavtar.web.controller;
 
-import com.iavtar.entity.User;
-import com.iavtar.service.UserService;
+import com.iavtar.infrastructure.entity.User;
+import com.iavtar.infrastructure.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

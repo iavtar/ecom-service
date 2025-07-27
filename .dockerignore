@@ -1,0 +1,57 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+*.iml
+.vscode
+.settings
+.project
+.classpath
+
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentation
+*.md
+!README.md
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Test files
+**/test/
+**/tests/
+**/*Test.java
+**/*Tests.java
+
+# Build artifacts
+*.jar
+*.war
+*.ear
+
+# Configuration files that might contain secrets
+**/application-local.yml
+**/application-secret.yml
+.env
+.env.local
+.env.production 

@@ -1,4 +1,4 @@
-package com.iavtar.entity;
+package com.iavtar.infrastructure.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -14,6 +14,8 @@ public class User {
 
     private String username;
 
+    private String password;
+
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id", referencedColumnName = "id")
     private Profile profile;
@@ -23,7 +25,6 @@ public class User {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -38,6 +39,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Profile getProfile() {
@@ -63,4 +72,5 @@ public class User {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
+
 }

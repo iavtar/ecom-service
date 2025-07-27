@@ -1,6 +1,6 @@
-package com.iavtar.service;
+package com.iavtar.infrastructure.service;
 
-import com.iavtar.entity.User;
+import com.iavtar.infrastructure.entity.User;
 import java.util.List;
 import java.util.Optional;
 

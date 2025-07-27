@@ -1,6 +1,6 @@
-package com.iavtar.repository;
+package com.iavtar.infrastructure.repository;
 
-import com.iavtar.entity.User;
+import com.iavtar.infrastructure.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

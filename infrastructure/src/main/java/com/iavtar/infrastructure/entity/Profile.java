@@ -1,4 +1,4 @@
-package com.iavtar.entity;
+package com.iavtar.infrastructure.entity;
 
 import jakarta.persistence.*;
 

@@ -150,6 +150,7 @@ The project follows Spring Boot best practices and clean architecture principles
 
 - [Database Setup Guide](DATABASE_SETUP.md) - Complete database configuration
 - [Environment Configuration](ENVIRONMENT_CONFIG.md) - Environment-specific settings
+- [Docker Guide](DOCKER_GUIDE.md) - Docker setup and deployment
 
 ## 🔒 Security
 
@@ -157,14 +158,19 @@ Security module is included for future authentication and authorization features
 
 ## 🚀 Deployment
 
-### Docker (Future)
+### Docker
 ```bash
-# Build image
-docker build -t ecom-service .
+# Development (H2 Database)
+docker-compose -f docker-compose.dev.yml up --build
 
-# Run container
-docker run -p 8080:8080 ecom-service
+# Development (MySQL)
+docker-compose -f docker-compose.dev.yml --profile mysql up --build
+
+# Production
+docker-compose up --build
 ```
+
+For detailed Docker instructions, see [Docker Guide](DOCKER_GUIDE.md).
 
 ### Production Checklist
 - [ ] Set environment variables
