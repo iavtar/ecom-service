@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "com.iavtar.repository")
+@EnableJpaRepositories(basePackages = "com.iavtar.infrastructure.repository")
 @EnableTransactionManagement
 public class DatabaseConfig {
     // Database configuration is handled by Spring Boot auto-configuration

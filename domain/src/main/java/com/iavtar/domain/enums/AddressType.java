@@ -1,4 +1,4 @@
-package com.iavtar.infrastructure.enums;
+package com.iavtar.domain.enums;
 
 public enum AddressType {
 

@@ -1,4 +1,4 @@
-package com.iavtar.infrastructure.entity;
+package com.iavtar.domain.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -24,6 +24,8 @@ public class User {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+    
+    private String transactionId;
 
     public Long getId() {
         return id;
@@ -71,6 +73,14 @@ public class User {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+    
+    public String getTransactionId() {
+        return transactionId;
+    }
+    
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
     }
 
 }

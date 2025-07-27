@@ -31,5 +31,6 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     com.iavtar: DEBUG
+    org.hibernate.tool.schema: WARN
   pattern:
-    console: "[ecom-service] %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "[ecom-service] [%X{transactionId}] %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

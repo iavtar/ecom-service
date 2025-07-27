@@ -1,6 +1,6 @@
-package com.iavtar.infrastructure.entity;
+package com.iavtar.domain.entity;
 
-import com.iavtar.infrastructure.enums.AddressType;
+import com.iavtar.domain.enums.AddressType;
 import jakarta.persistence.*;
 
 import java.util.Objects;
